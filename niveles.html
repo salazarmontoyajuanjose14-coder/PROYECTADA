@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Niveles | Programming Quiz</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/niveles.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="inicio.html" class="logo">
+            PROGRAMMING<span>QUIZ</span>
+        </a>
+
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <button id="cerrarSesion">Salir</button>
+        </nav>
+
+    </header>
+
+    <main class="niveles-container">
+
+        <section class="encabezado-niveles">
+
+            <p class="etiqueta">ZONA DE DESAFÍOS</p>
+
+            <h1>Selecciona tu <span>nivel</span></h1>
+
+            <p>
+                Supera cada desafío y demuestra tus habilidades
+                como programador.
+            </p>
+
+            <div class="progreso-general">
+
+                <div class="progreso-info">
+                    <span>Tu progreso</span>
+                    <strong id="porcentaje">0%</strong>
+                </div>
+
+                <div class="barra">
+                    <div id="barraProgreso"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="lista-niveles" id="listaNiveles">
+
+            <!-- JavaScript generará las tarjetas aquí -->
+
+        </section>
+
+        <a href="inicio.html" class="volver-inicio">
+            ← Volver al menú principal
+        </a>
+
+    </main>
+
+    <script src="../js/niveles.js"></script>
+
+</body>
+</html>

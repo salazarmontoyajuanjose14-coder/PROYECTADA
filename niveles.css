@@ -1,0 +1,204 @@
+
+.navbar {
+    min-height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #101725;
+    border-bottom: 1px solid #263348;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.logo span {
+    color: #00e5ff;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#cerrarSesion {
+    padding: 10px 18px;
+    background: #202c40;
+    border: 1px solid #34435a;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.niveles-container {
+    width: 88%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.encabezado-niveles {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.encabezado-niveles h1 {
+    font-size: 45px;
+    letter-spacing: -1px;
+    margin: 15px 0;
+}
+
+.encabezado-niveles h1 span {
+    color: #00e5ff;
+}
+
+.encabezado-niveles > p:not(.etiqueta) {
+    color: #aeb5c5;
+}
+
+.progreso-general {
+    max-width: 500px;
+    margin: 35px auto 0;
+}
+
+.progreso-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.progreso-info strong {
+    color: #00e5ff;
+}
+
+.barra {
+    height: 10px;
+    background: #202c40;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#barraProgreso {
+    width: 0%;
+    height: 100%;
+    background: #00e5ff;
+    border-radius: 20px;
+    transition: width 0.5s;
+}
+
+.lista-niveles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.nivel-card {
+    background: #101725;
+    border: 1px solid #263348;
+    border-radius: 16px;
+    padding: 28px;
+    transition: 0.3s;
+}
+
+.nivel-card.disponible:hover {
+    transform: translateY(-5px);
+    border-color: #00e5ff;
+}
+
+.nivel-card.bloqueado {
+    opacity: 0.55;
+}
+
+.nivel-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numero-nivel {
+    color: #00e5ff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.estado {
+    font-size: 13px;
+    color: #00e5ff;
+}
+
+.nivel-card h2 {
+    margin: 22px 0 10px;
+    font-size: 23px;
+}
+
+.nivel-card p {
+    color: #aeb5c5;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.dificultad {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 7px 12px;
+    background: #202c40;
+    color: #00e5ff;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.btn-nivel {
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+    padding: 12px;
+    background: #00e5ff;
+    color: #080b14;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-nivel:disabled {
+    background: #303b4c;
+    color: #aeb5c5;
+    cursor: not-allowed;
+}
+
+.volver-inicio {
+    display: inline-block;
+    margin-top: 35px;
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+
+    .lista-niveles {
+        grid-template-columns: 1fr;
+    }
+
+    .encabezado-niveles h1 {
+        font-size: 34px;
+    }
+
+    .niveles-container {
+        width: 92%;
+    }
+
+    .navbar {
+        padding: 15px 4%;
+    }
+}
